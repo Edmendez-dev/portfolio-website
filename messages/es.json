@@ -3,6 +3,21 @@
     "metadata": {
       "title": "Portafolio de Eduardo",
       "description": "Un soñador más"
+    },
+    "home_section": {
+      "roles": {
+        "paragraph_1": "Ingeniero Full Stack",
+        "paragraph_2": "Arquitecto de Sistemas de IA"
+      },
+      "description": "Creando sistemas inteligentes y escalables que fusionan ingeniería robusta con capacidades de IA de vanguardia. Especializado en la construcción de aplicaciones de grado de producción.",
+      "buttons": {
+        "explore_work": "Explorar Trabajo",
+        "get_in_touch": "Contactar"
+      },
+      "stats": {
+        "experience": "años construyendo software",
+        "cant_projects": "proyectos entregados"
+      }
     }
   }
 }

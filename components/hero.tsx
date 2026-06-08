@@ -1,6 +1,10 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 export function Hero() {
+  const t = useTranslations("app.home_section");
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -28,18 +32,16 @@ export function Hero() {
             {/* Roles */}
             <div className="space-y-3">
               <p className="text-xl sm:text-2xl text-accent font-medium">
-                Full Stack Engineer
+                {t("roles.paragraph_1")}
               </p>
               <p className="text-lg sm:text-xl text-accent-secondary font-medium">
-                AI Systems Architect
+                {t("roles.paragraph_2")}
               </p>
             </div>
 
             {/* Description */}
             <p className="text-base sm:text-lg text-muted-foreground max-w-md leading-relaxed">
-              Crafting intelligent, scalable systems that merge robust
-              engineering with cutting-edge AI capabilities. Specialized in
-              building production-grade applications.
+              {t("description")}
             </p>
 
             {/* CTA Buttons */}
@@ -49,7 +51,7 @@ export function Hero() {
                 className="glassmorphic px-8 py-4 bg-accent/20 text-accent font-semibold rounded-xl hover:bg-accent/30 transition-all duration-300 border border-accent/30 hover:border-accent/60 hover:shadow-lg hover:neon-glow group overflow-hidden"
               >
                 <span className="relative flex items-center justify-center gap-2">
-                  Explore Work
+                  {t("buttons.explore_work")}
                   <svg
                     className="w-5 h-5 group-hover:translate-x-1 transition-transform"
                     fill="none"
@@ -69,7 +71,7 @@ export function Hero() {
                 onClick={() => scrollToSection("contact")}
                 className="glassmorphic px-8 py-4 bg-accent-secondary/10 text-accent-secondary font-semibold rounded-xl hover:bg-accent-secondary/20 transition-all duration-300 border border-accent-secondary/30 hover:border-accent-secondary/60 hover:shadow-lg hover:neon-glow-purple"
               >
-                Get in Touch
+                {t("buttons.get_in_touch")}
               </button>
             </div>
           </div>
@@ -101,12 +103,12 @@ export function Hero() {
               {/* Stats */}
               <div className="space-y-3 text-center">
                 <div className="text-sm text-muted-foreground">
-                  <span className="text-accent font-bold">2+</span> years
-                  building
+                  <span className="text-accent font-bold">2+</span>{" "}
+                  {t("stats.experience")}
                 </div>
                 <div className="text-sm text-muted-foreground">
                   <span className="text-accent-secondary font-bold">3+</span>{" "}
-                  projects shipped
+                  {t("stats.cant_projects")}
                 </div>
               </div>
 
