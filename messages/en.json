@@ -1,0 +1,23 @@
+{
+  "app": {
+    "metadata": {
+      "title": "Eduardo's Portfolio",
+      "description": "One more dreamer"
+    },
+    "home_section": {
+      "roles": {
+        "paragraph_1": "Full Stack Engineer",
+        "paragraph_2": "AI Systems Architect"
+      },
+      "description": "Crafting intelligent, scalable systems that merge robust engineering with cutting-edge AI capabilities. Specialized in building production-grade applications.",
+      "buttons": {
+        "explore_work": "Explore Work",
+        "get_in_touch": "Get in Touch"
+      },
+      "stats": {
+        "experience": "years building software",
+        "cant_projects": "projects shipped"
+      }
+    }
+  }
+}
