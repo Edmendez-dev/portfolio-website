@@ -4,6 +4,11 @@
       "title": "Eduardo's Portfolio",
       "description": "One more dreamer"
     },
+    "floating_dock": {
+      "work": "Work",
+      "tech": "Tech",
+      "contact": "Contact"
+    },
     "home_section": {
       "roles": {
         "paragraph_1": "Full Stack Engineer",

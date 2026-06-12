@@ -4,6 +4,11 @@
       "title": "Portafolio de Eduardo",
       "description": "Un soñador más"
     },
+    "floating_dock": {
+      "work": "Trabajo",
+      "tech": "Tecnologías",
+      "contact": "Contacto"
+    },
     "home_section": {
       "roles": {
         "paragraph_1": "Ingeniero Full Stack",
