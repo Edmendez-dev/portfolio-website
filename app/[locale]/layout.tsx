@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
+import { MouseGlowProvider } from "@/components/mouseGlowProvider";
 
 const locales = ["en", "es"];
 
@@ -52,7 +53,7 @@ export default async function RootLayout({
       <div
         className={`${playfair.variable} ${inter.variable} antialiased min-h-screen flex flex-col`}
       >
-        {children}
+        <MouseGlowProvider>{children}</MouseGlowProvider>
       </div>
     </NextIntlClientProvider>
   );
