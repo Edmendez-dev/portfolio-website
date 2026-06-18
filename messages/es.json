@@ -23,6 +23,29 @@
         "experience": "años construyendo software",
         "cant_projects": "proyectos entregados"
       }
+    },
+    "projects_section": {
+      "title": "Sistemas de producción destacados",
+      "paragraph": "Colección orgánica de arquitecturas sofisticadas y soluciones basadas en IA diseñadas para la escalabilidad y el rendimiento.",
+      "projects": {
+        "project_1": {
+          "title": "VidWhisper Engine",
+          "description": "Plataforma web con inteligencia artificial que transcribe automáticamente archivos de vídeo y audio mediante OpenAI Whisper. Incluye procesamiento en segundo plano y un panel de control totalmente adaptable.",
+          "demo_video": "Vea una demostración en video del proyecto VidWhisper Engine."
+        },
+        "project_2": {
+          "title": "Plataforma de Renta de Vehículos",
+          "description": "Aplicación para la gestión de flotas y el alquiler de vehículos. Consulta de disponibilidad, sistema de reservas y panel de administración."
+        },
+        "project_3": {
+          "title": "Presentación de pilas tecnológicas",
+          "description": "Cuadrícula interactiva de competencias y tecnologías clave. Next.js • React • Node.js • Python • FastAPI • PostgreSQL • Docker • Prisma"
+        },
+        "project_4": {
+          "title": "Plataforma multimedia e infraestructura de transmisión en directo",
+          "description": "Plataforma multimedia full-stack con sistema de streaming en vivo por RTMP/HLS, gestión de activos digitales mediante un CMS personalizado con CRUD completo, publicaciones dinámicas y autenticación segura de usuarios."
+        }
+      }
     }
   }
 }

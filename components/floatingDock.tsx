@@ -10,7 +10,7 @@ export function FloatingDock() {
   const [isOpen, setIsOpen] = React.useState(false);
   const t = useTranslations("app.floating_dock");
   const navItems = [
-    { label: t("work"), id: "work" },
+    { label: t("work"), id: "projects" },
     { label: t("tech"), id: "tech" },
     { label: t("contact"), id: "contact" },
   ];

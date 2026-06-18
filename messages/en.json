@@ -23,6 +23,29 @@
         "experience": "years building software",
         "cant_projects": "projects shipped"
       }
+    },
+    "projects_section": {
+      "title": "Featured Production Systems",
+      "paragraph": "Organic collection of sophisticated architectures and AI-driven solutions built for scale and performance.",
+      "projects": {
+        "project_1": {
+          "title": "VidWhisper Engine",
+          "description": "An AI-powered web platform that automatically transcribes video and audio files using OpenAI Whisper. Features background processing, multi-language support, and a fully responsive dashboard.",
+          "demo_video": "Watch a video demonstration of the VidWhisper Engine project."
+        },
+        "project_2": {
+          "title": "Vehicle Rental Platform",
+          "description": "Application for fleet management and vehicle rental. Availability check, booking system, and admin panel."
+        },
+        "project_3": {
+          "title": "Tech Stack Showcase",
+          "description": "Interactive grid of core competencies and technologies. Next.js • React • Node.js • Python • FastAPI • PostgreSQL • Docker • Prisma"
+        },
+        "project_4": {
+          "title": "Media Platform and Live Streaming Infrastructure",
+          "description": "Full-stack media platform with live streaming capabilities via RTMP/HLS, digital asset management through a custom CMS with complete CRUD functionality, dynamic publishing, and secure user authentication."
+        }
+      }
     }
   }
 }
