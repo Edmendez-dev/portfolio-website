@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
+import { MouseGlowProvider } from "@/components/mouseGlowProvider";
 
 const locales = ["en", "es"];
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const playfair = Playfair_Display({
   subsets: ["latin"],
+  variable: "--font-display",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-sans",
 });
 
 export function generateStaticParams() {
@@ -50,9 +51,9 @@ export default async function RootLayout({
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
       <div
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`${playfair.variable} ${inter.variable} antialiased min-h-screen flex flex-col`}
       >
-        {children}
+        <MouseGlowProvider>{children}</MouseGlowProvider>
       </div>
     </NextIntlClientProvider>
   );

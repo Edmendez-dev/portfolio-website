@@ -5,8 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-heading: var(--font-sans);
-  --font-sans: "Geist", "Geist Fallback";
+  --font-display: var(--font-display, "Playfair Display", serif);
+  --font-sans: var(--font-sans, "Inter", sans-serif);
   --font-mono: "Geist Mono", "Geist Mono Fallback";
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -68,6 +68,8 @@
   --border: rgba(26, 31, 46, 0.5);
   --input: rgba(26, 31, 46, 0.6);
   --ring: #00d9ff;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
   --chart-1: #00d9ff;
   --chart-2: #a855f7;
   --chart-3: #06b6d4;
@@ -129,24 +131,36 @@
   html {
     @apply font-sans;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
 }
 
-/* Deep space background with ambient glow */
+/* Deep space background with interactive mouse-tracking glow */
 @layer base {
   body::before {
     content: "";
     position: fixed;
-    top: -40%;
-    right: -20%;
+    top: calc(var(--mouse-y) - 400px);
+    left: calc(var(--mouse-x) - 400px);
     width: 800px;
     height: 800px;
     background: radial-gradient(
       circle,
-      rgba(0, 217, 255, 0.15) 0%,
+      rgba(0, 217, 255, 0.2) 0%,
       transparent 70%
     );
     pointer-events: none;
     z-index: 0;
+    transition: opacity 0.1s ease-out;
   }
 
   body::after {
