@@ -46,6 +46,16 @@
           "description": "Full-stack media platform with live streaming capabilities via RTMP/HLS, digital asset management through a custom CMS with complete CRUD functionality, dynamic publishing, and secure user authentication."
         }
       }
+    },
+    "footer_section": {
+      "title": "EM",
+      "paragraph": "Full Stack & AI Engineer. Building intelligent systems at scale.",
+      "connect": "Connect",
+      "email": "Email",
+      "status": "Status",
+      "available": "Available for Projects",
+      "lets_talk": "Let's discuss your next venture",
+      "copyright": "Eduardo Méndez. All rights reserved."
     }
   }
 }
