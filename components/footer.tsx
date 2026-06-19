@@ -55,6 +55,10 @@ export function Footer() {
               </a>
               <a
                 href="mailto:eduardodev00@gmail.com"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "mailto:eduardodev00@gmail.com";
+                }}
                 className="text-sm text-muted-foreground hover:text-accent transition-colors duration-300 inline-flex items-center gap-2 group"
               >
                 <svg
