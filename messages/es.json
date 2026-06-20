@@ -46,6 +46,16 @@
           "description": "Plataforma multimedia full-stack con sistema de streaming en vivo por RTMP/HLS, gestión de activos digitales mediante un CMS personalizado con CRUD completo, publicaciones dinámicas y autenticación segura de usuarios."
         }
       }
+    },
+    "footer_section": {
+      "title": "EM",
+      "paragraph": "Ingeniero Full Stack y de IA. Creación de sistemas inteligentes a gran escala.",
+      "connect": "Conectemos",
+      "email": "Correo electrónico",
+      "status": "Estado",
+      "available": "Disponible para proyectos",
+      "lets_talk": "Hablemos de tu próxima aventura.",
+      "copyright": "Eduardo Méndez. Reservados todos los derechos."
     }
   }
 }
