@@ -47,6 +47,32 @@
         }
       }
     },
+    "tech_section": {
+      "core_competencies": "Core Competencies",
+      "paragraph": "Mastery across modern development stacks, from frontend frameworks to AI-driven backend systems.",
+      "categories": {
+        "frontend": {
+          "title": "Frontend Development",
+          "description": "Building responsive, performant user interfaces."
+        },
+        "backend": {
+          "title": "Backend Engineering",
+          "description": "Designing scalable server architectures and APIs."
+        },
+        "devops": {
+          "title": "Infrastructure and DevOps",
+          "description": "Deployment, containerization, and system automation."
+        },
+        "mobile": {
+          "title": "Mobile Development",
+          "description": "Building native and cross-platform mobile applications."
+        },
+        "ai": {
+          "title": "AI and Machine Learning",
+          "description": "Intelligent systems and advanced data processing."
+        }
+      }
+    },
     "contact_section": {
       "span_console": "command.console",
       "init_contact": "init contact",

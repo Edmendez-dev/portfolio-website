@@ -47,6 +47,32 @@
         }
       }
     },
+    "tech_section": {
+      "core_competencies": "Competencias básicas",
+      "paragraph": "Dominio de las pilas de desarrollo modernas, desde frameworks de frontend hasta sistemas de backend basados ​​en IA.",
+      "categories": {
+        "frontend": {
+          "title": "Desarrollo frontend",
+          "description": "Creación de interfaces de usuario responsivas y de alto rendimiento."
+        },
+        "backend": {
+          "title": "Ingeniería de backend",
+          "description": "Diseño de arquitecturas de servidor y API escalables."
+        },
+        "devops": {
+          "title": "Infraestructura y DevOps",
+          "description": "Despliegue, contenerización y automatización de sistemas."
+        },
+        "mobile": {
+          "title": "Desarrollo móvil",
+          "description": "Creación de aplicaciones móviles nativas y multiplataforma."
+        },
+        "ai": {
+          "title": "AI, Machine Learning",
+          "description": "Sistemas inteligentes y procesamiento avanzado de datos."
+        }
+      }
+    },
     "contact_section": {
       "span_console": "command.console",
       "init_contact": "init contact",
