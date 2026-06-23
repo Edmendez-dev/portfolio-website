@@ -47,6 +47,19 @@
         }
       }
     },
+    "contact_section": {
+      "span_console": "command.console",
+      "init_contact": "init contact",
+      "name_label": ">> Name",
+      "email_label": ">> Email",
+      "message_label": ">> Message",
+      "message_placeholder": "Describe your project or inquiry...",
+      "send_message": "$ Send",
+      "message_sent": "✓ Message sent!",
+      "clear": "Clear",
+      "connect": ">> connect",
+      "direct": "--direct"
+    },
     "footer_section": {
       "title": "EM",
       "paragraph": "Full Stack & AI Engineer. Building intelligent systems at scale.",

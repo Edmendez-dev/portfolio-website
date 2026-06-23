@@ -47,6 +47,19 @@
         }
       }
     },
+    "contact_section": {
+      "span_console": "command.console",
+      "init_contact": "init contact",
+      "name_label": ">> Nombre",
+      "email_label": ">> Correo electrónico",
+      "message_label": ">> Mensaje",
+      "message_placeholder": "Describa su proyecto o consulta...",
+      "send_message": "$ Enviar",
+      "message_sent": "✓ Mensaje enviado!",
+      "clear": "Limpiar",
+      "connect": ">> conectar",
+      "direct": "--directo"
+    },
     "footer_section": {
       "title": "EM",
       "paragraph": "Ingeniero Full Stack y de IA. Creación de sistemas inteligentes a gran escala.",
