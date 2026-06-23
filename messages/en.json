@@ -55,6 +55,7 @@
       "email_label_clean": "Email",
       "message_label": ">> Message",
       "message_placeholder": "Describe your project or inquiry...",
+      "sending": "Sending...",
       "send_message": "$ Send",
       "message_sent": "✓ Message sent!",
       "clear": "Clear",

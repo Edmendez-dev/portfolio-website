@@ -3,6 +3,9 @@
 import { useState, FormEvent } from "react";
 import { useTranslations } from "next-intl";
 
+// Secret key for forms
+const ACCESS_KEY = process.env.NEXT_PUBLIC_ACCESS_KEY;
+
 export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -10,16 +13,38 @@ export function Contact() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const t = useTranslations("app.contact_section");
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({ name: "", email: "", message: "" });
-    }, 3000);
+    setLoading(true);
+    setError(false);
+
+    const payload = new FormData();
+    payload.append("access_key", ACCESS_KEY || "");
+    payload.append("name", formData.name);
+    payload.append("email", formData.email);
+    payload.append("message", formData.message);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: payload,
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setError(true);
+      }
+    } catch (error) {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -117,18 +142,34 @@ export function Contact() {
                 </div>
               </div>
 
+              {error && (
+                <p className="text-red-400 font-mono text-xs pt-2">
+                  {t("submit_error")}
+                </p>
+              )}
+
               <div className="pt-6 flex gap-4">
                 <button
                   type="submit"
-                  className="group relative px-8 py-3 bg-accent/20 border border-accent/50 rounded-lg text-accent font-mono text-sm font-medium hover:bg-accent/30 hover:border-accent transition-all duration-300 overflow-hidden"
+                  disabled={loading}
+                  className="group relative px-8 py-3 bg-accent/20 border border-accent/50 rounded-lg text-accent font-mono text-sm font-medium hover:bg-accent/30 hover:border-accent transition-all duration-300 overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <span className="relative z-10">
-                    {submitted ? t("message_sent") : t("send_message")}
+                    {loading
+                      ? t("sending")
+                      : submitted
+                        ? t("message_sent")
+                        : t("send_message")}
                   </span>
                   <div className="absolute inset-0 bg-linear-to-r from-accent/0 via-accent/10 to-accent/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
                 <button
-                  type="reset"
+                  type="button"
+                  onClick={() => {
+                    setFormData({ name: "", email: "", message: "" });
+                    setSubmitted(false);
+                    setError(false);
+                  }}
                   className="px-6 py-3 border border-muted/30 rounded-lg text-muted-foreground font-mono text-sm hover:border-muted hover:text-foreground transition-all duration-300"
                 >
                   {t("clear")}

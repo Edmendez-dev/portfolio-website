@@ -55,6 +55,7 @@
       "email_label_clean": "Correo electrónico",
       "message_label": ">> Mensaje",
       "message_placeholder": "Describa su proyecto o consulta...",
+      "sending": "Enviando...",
       "send_message": "$ Enviar",
       "message_sent": "✓ Mensaje enviado!",
       "clear": "Limpiar",
