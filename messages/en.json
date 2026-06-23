@@ -52,6 +52,7 @@
       "init_contact": "init contact",
       "name_label": ">> Name",
       "email_label": ">> Email",
+      "email_label_clean": "Email",
       "message_label": ">> Message",
       "message_placeholder": "Describe your project or inquiry...",
       "send_message": "$ Send",

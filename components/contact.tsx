@@ -51,7 +51,7 @@ export function Contact() {
               <div className="space-y-2">
                 <label
                   htmlFor="name"
-                  className="block text-xs font-mono text-muted-foreground uppercase tracking-widest"
+                  className="block text-xs font-mono text-muted-foreground tracking-widest"
                 >
                   {t("name_label")}
                 </label>
@@ -64,7 +64,7 @@ export function Contact() {
                       setFormData({ ...formData, name: e.target.value })
                     }
                     required
-                    className="w-full px-4 py-3 bg-background/50 border-b border-accent/30 text-foreground placeholder-muted-foreground/50 focus:outline-none focus:border-accent transition-colors duration-300 font-mono text-sm"
+                    className="w-full px-4 py-3 bg-transparent border-b border-accent/30 text-foreground placeholder-muted-foreground/50 focus:outline-none focus:border-accent transition-colors duration-300 font-mono text-sm"
                     placeholder="Eduardo Méndez"
                   />
                   <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-accent via-accent to-transparent scale-x-0 group-focus-within:scale-x-100 transition-transform duration-300 origin-left"></div>
@@ -74,7 +74,7 @@ export function Contact() {
               <div className="space-y-2">
                 <label
                   htmlFor="email"
-                  className="block text-xs font-mono text-muted-foreground uppercase tracking-widest"
+                  className="block text-xs font-mono text-muted-foreground tracking-widest"
                 >
                   {t("email_label")}
                 </label>
@@ -87,7 +87,7 @@ export function Contact() {
                       setFormData({ ...formData, email: e.target.value })
                     }
                     required
-                    className="w-full px-4 py-3 bg-background/50 border-b border-accent/30 text-foreground placeholder-muted-foreground/50 focus:outline-none focus:border-accent transition-colors duration-300 font-mono text-sm"
+                    className="w-full px-4 py-3 bg-transparent border-b border-accent/30 text-foreground placeholder-muted-foreground/50 focus:outline-none focus:border-accent transition-colors duration-300 font-mono text-sm"
                     placeholder="eduardo@example.com"
                   />
                   <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-accent via-accent to-transparent scale-x-0 group-focus-within:scale-x-100 transition-transform duration-300 origin-left"></div>
@@ -97,7 +97,7 @@ export function Contact() {
               <div className="space-y-2">
                 <label
                   htmlFor="message"
-                  className="block text-xs font-mono text-muted-foreground uppercase tracking-widest"
+                  className="block text-xs font-mono text-muted-foreground tracking-widest"
                 >
                   {t("message_label")}
                 </label>
@@ -110,7 +110,7 @@ export function Contact() {
                     }
                     required
                     rows={4}
-                    className="w-full px-4 py-3 bg-background/50 border-b border-accent/30 text-foreground placeholder-muted-foreground/50 focus:outline-none focus:border-accent transition-colors duration-300 font-mono text-sm resize-none"
+                    className="w-full px-4 py-3 bg-transparent border-b border-accent/30 text-foreground placeholder-muted-foreground/50 focus:outline-none focus:border-accent transition-colors duration-300 font-mono text-sm resize-none"
                     placeholder={t("message_placeholder")}
                   ></textarea>
                   <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-accent via-accent to-transparent scale-x-0 group-focus-within:scale-x-100 transition-transform duration-300 origin-left"></div>
@@ -167,7 +167,7 @@ export function Contact() {
                     </svg>
                     <div>
                       <div className="text-xs font-mono text-muted-foreground">
-                        {t("email_label")}
+                        {t("email_label_clean")}
                       </div>
                       <div className="text-sm font-medium text-foreground">
                         eduardodev00@gmail.com
