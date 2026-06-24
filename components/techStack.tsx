@@ -24,6 +24,7 @@ export function TechStack() {
         "Node.js",
         "Python",
         "Java",
+        "Express.js",
         "Spring Boot",
         "FastAPI",
         "PostgreSQL",
