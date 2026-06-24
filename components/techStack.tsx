@@ -20,12 +20,21 @@ export function TechStack() {
     {
       title: t("categories.backend.title"),
       description: t("categories.backend.description"),
-      technologies: ["Node.js", "Python", "FastAPI", "PostgreSQL"],
+      technologies: [
+        "Node.js",
+        "Python",
+        "Java",
+        "Spring Boot",
+        "FastAPI",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+      ],
     },
     {
       title: t("categories.devops.title"),
       description: t("categories.devops.description"),
-      technologies: ["Docker", "Prisma ORM", "Git", "Linux"],
+      technologies: ["Docker", "Git", "Linux"],
     },
     {
       title: t("categories.mobile.title"),
